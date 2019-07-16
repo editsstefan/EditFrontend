@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { StefanComponent } from './stefan/stefan.component';
+import { HomeComponent } from './home/home.component';
 
 
 
@@ -11,6 +12,7 @@ import { StefanComponent } from './stefan/stefan.component';
   declarations: [
     AppComponent,
     StefanComponent,
+    HomeComponent
     
   ],
   imports: [
