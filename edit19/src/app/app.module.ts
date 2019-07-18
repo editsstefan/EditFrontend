@@ -10,8 +10,13 @@ import { HomeComponent } from './home/home.component';
 
 import { SearchbarComponent } from './searchbar/searchbar.component';
 /* tutorijal*/
-import {FormsModule} from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 
+
+import { GreenIconComponent } from './green-icon/green-icon.component';
+
+
+import { RedIconComponent } from './red-icon/red-icon.component';
 
 @NgModule({
   declarations: [
@@ -19,10 +24,12 @@ import {FormsModule} from '@angular/forms';
     AppComponent,
     StefanComponent,
     HomeComponent,
-    
-    AppComponent,
-    SearchbarComponent
+    SearchbarComponent,
 
+    GreenIconComponent,
+
+
+    RedIconComponent
   ],
   imports: [
     BrowserModule,

@@ -1,7 +1,7 @@
 <div class="search-container">
   <form action="/action_page.php">
-    <input type="text"  [(ngModel)]="ID" (input) = "Search()" placeholder="Insert id you want to track.." name="search">
-    
+    <input type="text" [(ngModel)]="ID" (input)="Search()" placeholder="Insert id you want to track.." name="search">
+
   </form>
 </div>
 
@@ -9,19 +9,27 @@
 
 
 <!-- dodala iz tutorijala -->
-<table class = "table">
-  <tr>
-    <th>ID</th>
-    <th>Time</th>
-    <th>Parking ID</th>
-    <th>Health Status</th>
-    <th>Fullness</th>
-  </tr>
-  <tr *ngFor='let o of information'>
-    <td>{{o.ID}}</td>
-    <td>{{o.Time}}</td>
-    <td>{{o.ParkingID}}</td>
-    <td>{{o.HealthStatus}}</td>
-    <td>{{o.Fullness}}</td>
-  </tr>
-</table>
+<div class="container">
+
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Time</th>
+        <th>Parking ID</th>
+        <th>Health Status</th>
+        <th>Fullness</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor='let o of information'>
+        <td>{{o.ID}}</td>
+        <td>{{o.Time}}</td>
+        <td>{{o.ParkingID}}</td>
+        <td>{{o.HealthStatus}}</td>
+        <td>{{o.Fullness}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
