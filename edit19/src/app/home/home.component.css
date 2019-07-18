@@ -2,24 +2,30 @@ html,
 body,
 .view {
   height: 100%;
-  
-
+  width: 100%;
 }
-
-
+.view{
+  background-image: url('https://www.maritime-executive.com/media/images/article/Photos/Miscellaneous/Cropped/ship%20to%20rail%2016-9.jpg');  
+  background-repeat: no-repeat; background-size: cover; background-position: center center;
+}
 header{
 height: 2%;
-
 }
-
-.img1{
+.responsive{
   margin-left: auto;
   margin-right: auto;
   opacity: 0.9;
-  
+  max-width: 100%;
+  height: auto;
+  overflow: scroll;
+  text-align:center;
+}
+.container
+{
+  height: 100vh;
 }
 .hr-light {
   border-top: 3px solid #fff;
-  width: 100%;
+  width: 85%;
   opacity: 0.6;
 }

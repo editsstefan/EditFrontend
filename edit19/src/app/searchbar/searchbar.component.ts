@@ -10,12 +10,14 @@ import { information } from '../../datamodel/information.model';
 export class SearchbarComponent implements OnInit {
   /* dodala iz tutorijala*/
   information: information[] = [];
+  allInfo: information[] = [];
   ID: string;
   constructor() { }
 
   ngOnInit() {
     /* dodala iz tutorijala*/
-    this.information = [
+
+    this.allInfo = this.information = [
       {
         "ID": "123",
         "Time": "23-10-2018 14:44",
@@ -57,7 +59,8 @@ export class SearchbarComponent implements OnInit {
 
   /*tutorijal*/
   Search() {
-    this.information = this.information.filter(res => {
+    console.log(this.ID);
+    this.information = this.allInfo.filter(res => {
       return res.ID.match(this.ID)
     });
 
