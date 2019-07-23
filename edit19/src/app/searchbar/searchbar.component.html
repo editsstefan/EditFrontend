@@ -1,6 +1,6 @@
 <div class="search-container">
   <form action="/action_page.php">
-    <input type="text" [(ngModel)]="ID" (input)="Search()" placeholder="Insert id you want to track.." name="search">
+    <input type="text" [(ngModel)]="ID" (input)="Search()" placeholder="Insert ID:" name="search" style="width:25%">
 
   </form>
 </div>
@@ -10,17 +10,17 @@
     <thead>
       <tr>
         <th >ID</th>
-        <th >Time</th>
+        
         <th >Health Status</th>
-        <th >Fullness</th>
+       
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor='let o of information'>
-        <td >{{o.ID}}</td>
-        <td>{{o.Time}}</td>      
-        <td>{{o.HealthStatus}}</td>
-        <td>{{o.Fullness}}</td>
+      <tr *ngFor='let arrival of arrivals.reverse()'>
+        <td >{{arrival.ID}}</td>
+       
+        <td>{{arrival.HealthStatus}}</td>
+      
       </tr>
     </tbody>
   </table>

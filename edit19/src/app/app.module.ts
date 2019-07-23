@@ -6,8 +6,8 @@ import { AppComponent } from './app.component';
 
 import { StefanComponent } from './stefan/stefan.component';
 import { HomeComponent } from './home/home.component';
-
-
+import { HttpClientModule} from '@angular/common/http';
+import { NewService} from 'src/app/new.service';
 import { SearchbarComponent } from './searchbar/searchbar.component';
 /* tutorijal*/
 import { FormsModule } from '@angular/forms';
@@ -20,7 +20,7 @@ import { RedIconComponent } from './red-icon/red-icon.component';
 
 @NgModule({
   declarations: [
-
+    
     AppComponent,
     StefanComponent,
     HomeComponent,
@@ -35,9 +35,10 @@ import { RedIconComponent } from './red-icon/red-icon.component';
     BrowserModule,
     AppRoutingModule,
     /* tutorijal*/
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [NewService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
