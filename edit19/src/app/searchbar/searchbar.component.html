@@ -10,17 +10,17 @@
     <thead>
       <tr>
         <th >ID</th>
-        
+        <th>Date&Time</th>
         <th >Health Status</th>
-       
+       <th> Fullness</th>
       </tr>
     </thead>
     <tbody>
       <tr *ngFor='let arrival of arrivals.reverse()'>
-        <td >{{arrival.ID}}</td>
-       
+        <td>{{arrival.ID}}</td>
+        <td>{{arrival.DateTime}}</td>
         <td>{{arrival.HealthStatus}}</td>
-      
+      <td>{{arrival.Fullness}}</td>
       </tr>
     </tbody>
   </table>

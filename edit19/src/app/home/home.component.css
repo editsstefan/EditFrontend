@@ -15,9 +15,10 @@
 .container
 {
   height: 100vh;
+  max-width:85%;
 }
 .hr-light {
   border-top: 3px solid #fff;
   width: 85%;
-  opacity: 0.6;
+  opacity: 0.4;
 }
