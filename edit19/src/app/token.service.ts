@@ -6,8 +6,8 @@ providedIn: 'root'
 })
 export class TokenService {  tokenUrl: string = "http://10.242.89.145:8081/v1/authentication/user";
 body: any = {
-  "password": "kapua-password",
-  "username": "kapua-sys"
+  "password": "Frontend!12345",
+  "username": "frontend"
 }
  httpOptions = {
   headers: new HttpHeaders({

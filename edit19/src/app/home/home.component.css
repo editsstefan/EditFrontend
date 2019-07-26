@@ -2,7 +2,7 @@
 .view{
   background-image: url('https://www.gospodarkamorska.pl/_upload/articles2/62126/img/kontenery_kolejowe.jpg');  
   background-repeat: no-repeat; background-size: cover; background-position: center center;
-  background-attachment: fixed;
+  background-attachment: fixed;  
 }
 
 .responsive{
@@ -16,6 +16,7 @@
 {
   height: 100vh;
   max-width:85%;
+  
 }
 .hr-light {
   border-top: 3px solid #fff;
